@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ShopCarFragment">
+    <RelativeLayout
+        android:id="@+id/rela"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/cb_checkAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全选"/>
+        <Button
+            android:id="@+id/xiadan"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f00"
+            android:textColor="#fff"
+            android:text="下单"/>
+        <TextView
+            android:id="@+id/all_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_toLeftOf="@id/xiadan"
+            android:textSize="22sp"
+            android:textColor="#f00"
+            android:text="$666"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_above="@+id/rela"
+        android:id="@+id/group_recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    
+    
+
+</RelativeLayout>

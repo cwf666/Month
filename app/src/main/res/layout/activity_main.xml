@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666666"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/fr_sel"
+            android:textColor="#fff"
+            android:button="@null"
+            android:padding="10dp"
+            android:checked="true"
+            android:text="首页"/>
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/fr_sel"
+            android:textColor="#fff"
+            android:button="@null"
+            android:padding="10dp"
+            android:text="分类"/>
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/fr_sel"
+            android:textColor="#fff"
+            android:button="@null"
+            android:padding="10dp"
+            android:text="购物车"/>
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/fr_sel"
+            android:textColor="#fff"
+            android:button="@null"
+            android:padding="10dp"
+            android:text="个人"/>
+
+    </RadioGroup>
+    <FrameLayout
+        android:id="@+id/fr"
+        android:layout_above="@id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</RelativeLayout>
